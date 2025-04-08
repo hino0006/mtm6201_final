@@ -45,5 +45,6 @@ a website for the recreation center Active Life
 ## Fonts 
 
 ## Experience with the project 
-
+I changed certain layout choices on the tablet and desktop layouts for the programs and services page as well as the community page 
+the additions of the icons in the membership section of the program & services page was a stylistic choice that was not previously added to the mockups 
 
