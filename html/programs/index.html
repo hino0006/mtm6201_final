@@ -3,14 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
+   
+    <!-- google fonts link - Inter & Encode sans -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
+    
+    <!-- linking bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
     <title>Programs & Services</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="/html/home/index.html">
+                <img src="/images/logo.svg" alt="Logo">
+            </a>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="/html/programs/index.html">Programs & Services</a></li>
+                <li><a href="/html/schedules/index.html">Schedules</a></li>
+                <li><a href="/html/community/index.html">Community</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <div>
+        <!-- make h1 all caps -->
+        <h1>Programs & Services</h1>
+        <p>We offer a wide range of programs and services, including group fitness classes, aquatic activities, sports leagues, wellness programs, and facility rentals, designed to support all fitness levels and interests.</p>
+        <!-- down arrow icon goes here  -->
+       
+       </div>
+
+       <div>
+            <article>
+                <picture>
+                <img src="/images/weightlifting.jpg" alt="person about to lift barbell">
+                </picture>
+                <!-- make h3 all caps -->
+                <h3>Fitness & Wellness</h3>
+                <p>Prioritize your well-being with our health and wellness programs, including fitness classes, rehabilitation services, and mindfulness activities designed to support a balanced and active lifestyle.</p>
+                <a href="/html/schedules/index.html">See Schedules</a>
+            </article>
+            
+            <article>
+                <picture>
+                    <img src="/images/basketball.jpg" alt="basketball on a ball rack">
+                </picture>
+                <h3>Sports & Recreation</h3>
+                <p>From competitive leagues to casual drop-in sessions, our sports and recreation programs offer fun, fitness, and friendly competition for all skill levels and interests.</p>
+                <a href="/html/schedules/index.html">See Schedules</a>
+            </article>
+       </div>
+       <hr>
+       <div>
+            <!-- add all caps to h2 -->
+            <h2>Memberships</h2>
+            <p>Enjoy flexible membership options that give you access to our top-notch facilities, diverse programs, and exclusive perks—designed to fit your lifestyle and fitness goals!</p>
+            
+            <div>
+                <h2>Types & Pricing</h2>
+                <section>
+                    <!-- add icon here -->
+                    <!-- change h3 to all caps -->
+                    <h3>Basic</h3>
+                    <ul>
+                        <li>Access to fitness center & cardio equipment</li>
+                        <li>Select group fitness classes</li>
+                        <li>General pool access during open swim hours</li>
+                    </ul>
+                </section>
+                <section>
+                    <!-- add icon here -->
+                    <!-- change h3 to all caps -->
+                    <h3>Standard</h3>
+                    <ul>
+                        <li>Full access to all fitness areas & equipment</li>
+                        <li>Unlimited group fitness classes (yoga, strength training, etc.)</li>
+                        <li>Access to open gym & recreational sports</li>
+                    </ul>
+                </section>
+                <section>
+                    <!-- add icon here -->
+                    <!-- change h3 to all caps -->
+                    <h3>Premium</h3>
+                    <ul>
+                        <li>Priority class reservations & specialty programs (e.g., spin, HIIT)</li>
+                        <li>Discounts on facility rentals (party rooms, courts, rink)</li>
+                        <li>Guest passes for friends & family</li>
+                    </ul>
+                </section>
+                <section>
+                    <!-- add icon here -->
+                    <!-- change h3 to all caps -->
+                    <h3>Vip</h3>
+                    <ul>
+                        <li>Unlimited access to all facilities, including premium amenities (sauna, private lockers)</li>
+                        <li>Personalized fitness assessment & one-on-one training session</li>
+                        <li>Exclusive invitations to VIP events & early access to new programs</li>
+                    </ul>
+                </section>
+            </div>
+       </div>
+    </main>
+    <footer>
+        <!-- footer with links and copyright-->
+        
+        <img src="/images/logo.svg" alt="Logo">
+        <div>
+            <a href="/html/home/index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="/html/programs/index.html"></a>
+        </div>
+        <div>
+            <a href="/html/schedules/index.html"></a>
+            <a href="/html/community/index.html"></a>
+            <a href="#">Community</a>
+        </div>
+        <p> Copyright &copy;2025 Active Life Centre. </p>
+    </footer>
     <!------------------ MOBILE -------------------->
     <!-- main nav with logo and slide in menu -->
 
@@ -65,5 +180,8 @@
 
     <!-- footer with links and copyright-->
 
+
+    <!-- no content after this line -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
