@@ -20,10 +20,16 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="/html/home/index.html">
-                <img src="/images/logo.svg" alt="Logo">
-            </a>
+        <a href="/html/home/index.html">
+            <img src="/images/logo.svg" alt="Logo">
+        </a>
+        <button class="btn d-lg-none offcanvas-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button>
+
+        <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="offcanvasResponsiveLabel">Menu</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
             <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="/html/programs/index.html">Programs & Services</a></li>
@@ -31,17 +37,17 @@
                 <li><a href="/html/community/index.html">Community</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main>
        <div>
-        <!-- make h1 all caps -->
-        <h1>Programs & Services</h1>
-        <p>We offer a wide range of programs and services, including group fitness classes, aquatic activities, sports leagues, wellness programs, and facility rentals, designed to support all fitness levels and interests.</p>
-        <!-- down arrow icon goes here  -->
-       
+            <!-- make h1 all caps -->
+            <h1>Programs & Services</h1>
+            <p>We offer a wide range of programs and services, including group fitness classes, aquatic activities, sports leagues, wellness programs, and facility rentals, designed to support all fitness levels and interests.</p>
+                
        </div>
-
+        <!-- down arrow icon goes here  -->
+        <i class="fa-solid fa-arrow down"></i>
        <div>
             <article>
                 <picture>
@@ -72,6 +78,7 @@
                 <h2>Types & Pricing</h2>
                 <section>
                     <!-- add icon here -->
+                     <img src="/images/icons/muscle.svg" alt="muscle icon" width="70" height="70">
                     <!-- change h3 to all caps -->
                     <h3>Basic</h3>
                     <ul>
@@ -82,6 +89,7 @@
                 </section>
                 <section>
                     <!-- add icon here -->
+                    <img src="/images/icons/dumbbell.svg" alt="dumbbell icon" width="70" height="70">
                     <!-- change h3 to all caps -->
                     <h3>Standard</h3>
                     <ul>
@@ -92,6 +100,7 @@
                 </section>
                 <section>
                     <!-- add icon here -->
+                    <img src="/images/icons/star.svg" alt="star icon" width="70" height="70">
                     <!-- change h3 to all caps -->
                     <h3>Premium</h3>
                     <ul>
@@ -102,6 +111,7 @@
                 </section>
                 <section>
                     <!-- add icon here -->
+                    <img src="/images/icons/diamond.svg" alt="diamond icon" width="70" height="70">
                     <!-- change h3 to all caps -->
                     <h3>Vip</h3>
                     <ul>

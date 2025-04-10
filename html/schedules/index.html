@@ -13,7 +13,7 @@
 
     <!-- linking bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-   
+
     <!-- stylesheet -->
     <link rel="stylesheet" href="/css/style.css">
     <title>Schedules</title>
@@ -22,10 +22,16 @@
     <!------------------ MOBILE -------------------->
     <!-- main nav with logo and slide in menu -->
     <header>
-        <nav>
-            <a href="/html/home/index.html">
-                <img src="/images/logo.svg" alt="Logo">
-            </a>
+        <a href="/html/home/index.html">
+            <img src="/images/logo.svg" alt="Logo">
+        </a>
+        <button class="btn d-lg-none offcanvas-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button>
+
+        <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="offcanvasResponsiveLabel">Menu</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
             <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="/html/programs/index.html">Programs & Services</a></li>
@@ -33,7 +39,7 @@
                 <li><a href="/html/community/index.html">Community</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main>
         <div>
@@ -46,6 +52,7 @@
         <hr>
         
         <!-- calendar  -->
+          
 
 
         <div>
@@ -61,22 +68,30 @@
                 <!-- ICE RINK -->
                 <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
                 Ice Rink
+                <i class="fa-solid fa-play"></i>
                 </button>
+                
                 <!-- POOL -->
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Pool
+                <i class="fa-solid fa-play"></i>
                 </button>
+                
                 <!-- STEAM ROOM -->
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Steam Room
+                <i class="fa-solid fa-play"></i>
                 </button>
                 <!-- GYM -->
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 Gym
+                <i class="fa-solid fa-play"></i>
                 </button>
+
                 <!-- FITNESS STUDIO -->
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 Fitness Studio
+                <i class="fa-solid fa-play"></i>
                 </button>
 
             </p>
@@ -497,6 +512,7 @@
 
 
     <!-- no content after this line -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -21,10 +21,16 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="/html/home/index.html">
-                <img src="/images/logo.svg" alt="Logo">
-            </a>
+        <a href="/html/home/index.html">
+            <img src="/images/logo.svg" alt="Logo">
+        </a>
+        <button class="btn d-lg-none offcanvas-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button>
+
+        <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="offcanvasResponsiveLabel">Menu</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
             <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="/html/programs/index.html">Programs & Services</a></li>
@@ -32,7 +38,7 @@
                 <li><a href="/html/community/index.html">Community</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
     <main>
