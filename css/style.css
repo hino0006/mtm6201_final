@@ -16,15 +16,25 @@ header, footer{
     padding: 20px;
     width: 100vw ;
 }
+/* offcanvas menu button */
 .btn{
     display: flex;
     float: inline-end;
     margin: 30px;
 }
+/* global settings */
+
+hr{
+    border: none;
+    border-top: 20px dotted var(--accentColor2);
+    width: 15%;
+    display:flex;
+    justify-self: center;
+    padding-bottom: 50px;
+}
 
 body{
     background-color: var(--primaryColor);
-    
 }
 .container{
     max-width: 1200px;
@@ -67,6 +77,12 @@ img{
     border-radius: 10px;
 }
 
+.fa-bars{
+    font-size: 40px;
+}
+
+
+
 /* for the chunks of content to center them*/
 .text{
     text-align: center;
@@ -101,7 +117,7 @@ footer{
 article{
     background-color: var(--secondaryColor);
     padding: 20px;
-    width: 70vw;
+    width: 80vw;
     justify-self: center;
     margin-bottom: 100px;
     border-radius: 10px;
@@ -109,11 +125,52 @@ article{
 
 .card-text{
     color: var(--primaryColor);
+    padding-bottom: 30px;
 }
 /* resizing the logo */
 .active-life{
     width: 275px;
 }
+
+/* carousel */
+#carousel{
+   padding-top: 40px;
+   padding-bottom: 20px;
+}
+
+/* blockquote */
+.bq{
+    font-size: 18pt;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+/* primary button */
+.connect{
+    background-color: var(--buttonColor);
+    color: var(--primaryColor);
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 4px 2px var(--secondaryColor);
+    font-weight: 500;
+    font-size: 16pt;
+}
+
+/* primary button in the sections/articles */
+.connect-2{
+    background-color: var(--buttonColor);
+    color: var(--primaryColor);
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 4px 2px var(--accentColor2);
+    font-weight: 500;
+    font-size: 16pt;
+    
+}
+
+
 /* ------------------MEDIA QUERIES------------------------- */
 /* for tablet */
 @media screen and (min-width: 500px){
@@ -149,5 +206,13 @@ article{
 
     p{
         font-size: 22px;
+    }
+
+    .bq{
+        font-size: 24pt;
+    }
+
+    #carousel{
+        padding-top: 40px;
     }
 } 
