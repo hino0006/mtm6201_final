@@ -82,7 +82,6 @@ img{
 }
 
 
-
 /* for the chunks of content to center them*/
 .text{
     text-align: center;
@@ -113,14 +112,35 @@ footer{
     font-size: 14pt;
 }
 
+/* the off canvas nav menu cusomization */
+#tab, .special-b{
+    list-style-type: none;
+    color: var(--secondaryColor);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18pt;
+}
+
+#tab:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
 /* building the blocks/cards/product */
 article{
     background-color: var(--secondaryColor);
     padding: 20px;
     width: 80vw;
     justify-self: center;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
     border-radius: 10px;
+}
+
+.things{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card-text{
@@ -191,7 +211,7 @@ article{
 
 /* for desktop */
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1000px){
     h1{
         font-size: 72px;
     }
@@ -215,4 +235,29 @@ article{
     #carousel{
         padding-top: 40px;
     }
+
+    header, .special-b{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .special-b{
+        padding-right: 60px;
+    }
+
+    #tab{
+        margin:30px;
+    }
+    .things{
+        display:flex;
+        flex-wrap: nowrap;
+        gap: 3rem;
+        padding-bottom: 60px;
+    }
+    .things article{
+        flex: 1;
+        padding: 1rem;
+    }
+   
 } 

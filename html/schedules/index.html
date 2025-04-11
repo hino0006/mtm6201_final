@@ -25,24 +25,24 @@
         <a href="/html/home/index.html">
             <img src="/images/logo.svg" alt="Logo" class="active-life">
         </a>
-        <button class="btn d-lg-none offcanvas-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button>
+        <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button>
 
         <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
             <div class="offcanvas-header">
                 <h3 class="offcanvas-title" id="offcanvasResponsiveLabel">Menu</h3>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
             </div>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="/html/programs/index.html">Programs & Services</a></li>
-                <li><a href="/html/schedules/index.html">Schedules</a></li>
-                <li><a href="/html/community/index.html">Community</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="special-b">
+                <li><a href="#" id="tab">About Us</a></li>
+                <li><a href="/html/programs/index.html" id="tab">Programs & Services</a></li>
+                <li><a href="/html/schedules/index.html" id="tab">Schedules</a></li>
+                <li><a href="/html/community/index.html" id="tab">Community</a></li>
+                <li><a href="#" id="tab">Contact</a></li>
             </ul>
         </div>
     </header>
     <main class="container">
-        <div>
+        <div class="text">
             <h1>Schedules</h1>
             <h2>Drop-ins & Group Sessions</h2>
             <p>Stay flexible with our drop-in and group sessions, offering a variety of fitness classes, sports activities, and open gym times!
@@ -55,41 +55,41 @@
           
 
 
-        <div>
+        <div class="text">
             <!-- change h2 to all caps -->
             <h2>Facilities & Hours</h2>
             <p>Our state-of-the-art facilities, including a fitness center, pool, and gym, are open with flexible hours to fit your schedule—so you can stay active when it’s most convenient for you!</p>
         </div>
         
-        <div class="drop-menu">
+        <div class="drop-menu text">
             <!-- x5 dropdown menu with animations/active states, inside - table with hours and an image of the facility -->
             <!-- with the way this menu displays, i need to add flex/grid for the vertical layout -->
             <p>
                 <!-- ICE RINK -->
-                <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+                <button class="sche-btn" data-bs-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
                 Ice Rink
                 <i class="fa-solid fa-play"></i>
                 </button>
                 
                 <!-- POOL -->
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="sche-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Pool
                 <i class="fa-solid fa-play"></i>
                 </button>
                 
                 <!-- STEAM ROOM -->
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="sche-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Steam Room
                 <i class="fa-solid fa-play"></i>
                 </button>
                 <!-- GYM -->
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <button class="sche-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 Gym
                 <i class="fa-solid fa-play"></i>
                 </button>
 
                 <!-- FITNESS STUDIO -->
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <button class="sche-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 Fitness Studio
                 <i class="fa-solid fa-play"></i>
                 </button>
