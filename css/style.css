@@ -118,7 +118,10 @@ footer{
     font-weight: 600;
     font-size: 14pt;
 }
-
+.special-a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
 /* the off canvas nav menu cusomization */
 #tab, .special-b{
     list-style-type: none;
@@ -162,6 +165,7 @@ article{
 #carousel{
    padding-top: 40px;
    padding-bottom: 20px;
+   padding-left: 40px;
 }
 
 /* blockquote */
@@ -169,6 +173,7 @@ article{
     font-size: 18pt;
     font-weight: 600;
     padding-bottom: 20px;
+    padding-left: 30px;
 }
 
 /* primary button */
@@ -296,6 +301,7 @@ table, th, td {
     justify-content: center;
 }
 
+
 /* ------------------MEDIA QUERIES------------------------- */
 /* for tablet */
 @media screen and (min-width: 800px){
@@ -322,6 +328,8 @@ table, th, td {
         flex: 1;
         padding: 1rem;
     }
+
+  
 } 
 
 
@@ -411,4 +419,22 @@ table, th, td {
         flex: 1;
         padding: 1rem;
     }
+    .articles {
+        display: grid;
+        gap: 2rem; /* space between items */
+        grid-template-columns: repeat(2, 1fr); /* 3 columns */
+        max-width: 800px;
+        margin: auto 0;
+        padding: 2rem;
+    }
+
+    .articles article {
+        flex: 1 1 calc(50% - 2rem); /* Two columns */
+       max-width: 550px;
+    }
+      
+    
+         
+       
+        
 } 
