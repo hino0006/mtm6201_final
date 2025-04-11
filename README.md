@@ -53,6 +53,8 @@ Would like to mention that the content of this website (not the code) was genera
 
 - 'star.svg' - Icon by [Icon Icons](https://icon-icons.com/icon/star/86960) on Icon Icons
 
+- 'person-running-solid' [FontAwesome](https://fontawesome.com/icons/person-running?f=classic&s=solid) on FontAwesome
+
 ## Frameworks & Libraries
 CSS Framework library - Bootstrap
 
