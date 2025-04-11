@@ -126,6 +126,10 @@ footer{
     text-decoration: underline;
 }
 
+#tab:visited{
+    color: var(--visited);
+}
+
 
 /* building the blocks/cards/product */
 article{
@@ -175,7 +179,20 @@ article{
     box-shadow: 4px 2px var(--secondaryColor);
     font-weight: 500;
     font-size: 16pt;
+    transition: background-image 0.3s ease;
 }
+.connect:hover{
+    background-image: linear-gradient(45deg, #296eb4, #17bebb);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.connect:active{
+    background-color: var(--accentColor);
+}
+.connect:visited{
+    background-color: var(--visited);
+}
+
 
 /* primary button in the sections/articles */
 .connect-2{
@@ -187,7 +204,20 @@ article{
     box-shadow: 4px 2px var(--accentColor2);
     font-weight: 500;
     font-size: 16pt;
+    transition: background-image 0.3s ease;
     
+}
+.connect-2:hover{
+    background-image: linear-gradient(45deg, #296eb4, #17bebb);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.connect-2:active{
+    background-color: var(--accentColor);
+    
+}
+.connect-2:visited{
+    background-color: var(--visited);
 }
 
 /* calendar */
@@ -221,6 +251,18 @@ article{
     padding: 15px;
     margin: 10px;
 }
+.sche-btn:hover{
+    background-color: var(--accentColor);
+    color: var(--accentColor2);
+}
+.sche-btn:hover .fa-play{
+    transform: rotate(90deg);
+}
+
+.sche-btn:active{
+    background-color: var(--accentColor);
+    color: var(--accentColor2);
+}
 
 .sche-btn-main{
     display: flex;
@@ -228,6 +270,14 @@ article{
     justify-content: center;
     align-items: center;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 10px;
+}
+    
 
 /* ------------------MEDIA QUERIES------------------------- */
 /* for tablet */
@@ -297,5 +347,19 @@ article{
         flex: 1;
         padding: 1rem;
     }
-   
+  
+    .sche-btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        background-color: var(--accentColor2);
+        color: var(--primaryColor);
+        font-size: 20pt;
+        font-weight: 500;
+        text-transform: uppercase;
+        width: 600px;
+        padding: 15px;
+        margin: 10px;
+    }
 } 
