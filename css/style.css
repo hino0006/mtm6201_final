@@ -11,3 +11,143 @@
 
 }
 
+header, footer{
+    background-color: var(--accentColor);
+    padding: 20px;
+    width: 100vw ;
+}
+.btn{
+    display: flex;
+    float: inline-end;
+    margin: 30px;
+}
+
+body{
+    background-color: var(--primaryColor);
+    
+}
+.container{
+    max-width: 1200px;
+    margin: auto 0;
+    justify-self: center;
+}
+
+h1{
+    font-family: var(--headingFont);
+    font-weight: 800;
+    font-size: 32pt;
+    text-transform: uppercase;
+    padding-top: 2rem;
+}
+
+h2{
+    font-family: var(--headingFont);
+    font-weight: 700;
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: var(--headingFont);
+    font-weight: 600;
+    font-size: 16pt;
+    text-transform: uppercase;
+    color: var(--accentColor);
+}
+
+p{
+    font-family: var(--contentFont);
+    font-size: 12pt;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* for the chunks of content to center them*/
+.text{
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 30px;
+}
+
+/* formatting footer */
+.foot-main{
+    display: flex;
+    padding-top: 20px;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+.foot-menu{
+    flex: 1;
+    /* content inside foot-menu stack vertically */
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    justify-items: center;
+}
+.special-a{
+    color: var(--secondaryColor);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14pt;
+}
+
+/* building the blocks/cards/product */
+article{
+    background-color: var(--secondaryColor);
+    padding: 20px;
+    width: 70vw;
+    justify-self: center;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+.card-text{
+    color: var(--primaryColor);
+}
+/* resizing the logo */
+.active-life{
+    width: 275px;
+}
+/* ------------------MEDIA QUERIES------------------------- */
+/* for tablet */
+@media screen and (min-width: 500px){
+    h1{
+        font-size: 52pt;
+    }
+
+    h2{
+        font-size: 44pt;
+    }
+
+    h3{
+        font-size: 36pt;
+    }
+ 
+} 
+
+
+/* for desktop */
+
+@media screen and (min-width: 900px){
+    h1{
+        font-size: 72px;
+    }
+
+    h2{
+        font-size: 64px;
+    }
+    
+    h3{
+        font-size: 56px;
+    }
+
+    p{
+        font-size: 22px;
+    }
+} 

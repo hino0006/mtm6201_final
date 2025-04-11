@@ -20,9 +20,9 @@
     <title>Homepage</title>
 </head>
 <body>
-    <header>
+    <header role="banner">
         <a href="/html/home/index.html">
-            <img src="/images/logo.svg" alt="Logo">
+            <img src="/images/logo.svg" alt="Logo" class="active-life">
         </a>
         <button class="btn d-lg-none offcanvas-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button>
 
@@ -41,7 +41,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="container">
         <section>
             <!-- carosel with rotating images-->
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -130,23 +130,24 @@
         </div>
         <br>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <!-- footer with links and copyright-->
         
-        <img src="/images/logo.svg" alt="Logo">
-        <div>
-            <a href="/html/home/index.html">Home</a>
-            <a href="#">About Us</a>
-            <a href="/html/programs/index.html"></a>
-        </div>
-        <div>
-            <a href="/html/schedules/index.html"></a>
-            <a href="/html/community/index.html"></a>
-            <a href="#">Community</a>
+        <img src="/images/logo.svg" alt="Logo" class="active-life">
+        <div class="foot-main"> 
+            <div class="foot-menu">
+                <a href="/html/home/index.html" class="special-a">Home</a>
+                <a href="#" class="special-a">About Us</a>
+                <a href="/html/programs/index.html" class="special-a"> Programs & Services</a>
+            </div>
+            <div class="foot-menu">
+                <a href="/html/schedules/index.html" class="special-a">Schedules</a>
+                <a href="/html/community/index.html" class="special-a">Community</a>
+                <a href="#" class="special-a">Contact Us</a>
+            </div>
         </div>
         <p> Copyright &copy;2025 Active Life Centre. </p>
     </footer>
- 
   
 
     

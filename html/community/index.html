@@ -18,12 +18,13 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Community</title>
 </head>
+
 <body>
-    <header>
+    <header role="banner">
         <a href="/html/home/index.html">
-            <img src="/images/logo.svg" alt="Logo">
+            <img src="/images/logo.svg" alt="Logo" class="active-life">
         </a>
-        <button class="btn d-lg-none offcanvas-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button>
+        <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button>
 
         <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
             <div class="offcanvas-header">
@@ -39,82 +40,63 @@
             </ul>
         </div>
     </header>
-    <main>
+    <main class="container">
         <!------------------ MOBILE -------------------->
 
-        <div>
+        <div class="text">
             <h1>Community</h1>
             <p>Join a welcoming community where members of all ages and backgrounds connect through fitness, sports, and special events, fostering a sense of belonging and well-being.</p>
         </div>
         <!-- h1 -->
         <!--paragraph -->
 
-        <div>
+        <div class="cards">
             <!-- x2 sections STACKED VERTICALLY with picture, h3, paragraph and primary button-->
             <article>
                 <picture>
                     <img src="/images/aerobics.jpg" alt="group aerobics class">
                 </picture>
                 <!-- make h3 all caps in css -->
-                <h3>Gallery</h3>
-                <p>Explore our photo gallery to get a glimpse of our vibrant community, state-of-the-art facilities, and exciting programs in action. See firsthand the welcoming spaces, dynamic fitness classes, and recreational activities that make our center the perfect place to stay active and connected.</p>
-                <a href="#">See Gallery</a>
+                <div class="text">    
+                    <h3>Gallery</h3>
+                    <p class="card-text">Explore our photo gallery to get a glimpse of our vibrant community, state-of-the-art facilities, and exciting programs in action. See firsthand the welcoming spaces, dynamic fitness classes, and recreational activities that make our center the perfect place to stay active and connected.</p>
+                    <a href="#">See Gallery</a>
+                </div>
             </article>
             <article>
                 <picture>
                     <img src="/images/senior.jpg" alt="older man posing on a barbell rack">
                 </picture>
                 <!-- make h3 all caps in css -->
-                <h3>Testimonials</h3>
-                <p>"I recently visited the new recreation centre, and I have to say, it exceeded all my expectations! From the moment I walked in, I was greeted by friendly staff who made me feel right at home...”</p>
-                <a href="#">Read More</a>
+                <div class="text">
+                    <h3>Testimonials</h3>
+                    <p class="card-text">"I recently visited the new recreation centre, and I have to say, it exceeded all my expectations! From the moment I walked in, I was greeted by friendly staff who made me feel right at home...”</p>
+                    <a href="#">Read More</a>
+                </div>
             </article>
         </div>  
 
     </main>
    
-    <footer>
+    <footer role="contentinfo">
         <!-- footer with links and copyright-->
         
-        <img src="/images/logo.svg" alt="Logo">
-        <div>
-            <a href="/html/home/index.html">Home</a>
-            <a href="#">About Us</a>
-            <a href="/html/programs/index.html"></a>
-        </div>
-        <div>
-            <a href="/html/schedules/index.html"></a>
-            <a href="/html/community/index.html"></a>
-            <a href="#">Community</a>
+        <img src="/images/logo.svg" alt="Logo" class="active-life">
+        <div class="foot-main"> 
+            <div class="foot-menu">
+                <a href="/html/home/index.html" class="special-a">Home</a>
+                <a href="#" class="special-a">About Us</a>
+                <a href="/html/programs/index.html" class="special-a"> Programs & Services</a>
+            </div>
+            <div class="foot-menu">
+                <a href="/html/schedules/index.html" class="special-a">Schedules</a>
+                <a href="/html/community/index.html" class="special-a">Community</a>
+                <a href="#" class="special-a">Contact Us</a>
+            </div>
         </div>
         <p> Copyright &copy;2025 Active Life Centre. </p>
     </footer>
    
-    <!-- footer with links and copyright-->
-
-
-    <!------------------ TABLET -------------------->
-    <!-- main nav with logo and slide in menu -->
-
-    <!-- h1 -->
-    <!--paragraph -->
-
-    <!-- hr -->
-    <!-- x2 sections STACKED VERTICALLY with picture, h3, paragraph and primary button-->
-
-    <!-- footer with links and copyright -->
-
-
-    <!------------------ DESKTOP -------------------->
-    <!-- main nav with hover states for each link -->
-
-    <!-- h1 -->
-    <!--paragraph -->
-
-    <!-- hr -->
-    <!-- x2 sections HORIZONTAL INLINE USING GRID/FLEX with picture, h3, paragraph and primary button-->
-
-    <!-- footer with links and copyright-->
 
     <!-- no content after this line -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>

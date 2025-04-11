@@ -19,9 +19,11 @@
     <title>Programs & Services</title>
 </head>
 <body>
-    <header>
+    <!------------------ MOBILE/Tablet -------------------->
+    <!-- main nav with logo and slide in menu -->
+    <header role="banner">
         <a href="/html/home/index.html">
-            <img src="/images/logo.svg" alt="Logo">
+            <img src="/images/logo.svg" alt="Logo" class="active-life">
         </a>
         <button class="btn d-lg-none offcanvas-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button>
 
@@ -39,7 +41,7 @@
             </ul>
         </div>
     </header>
-    <main>
+    <main class="container">
        <div>
             <!-- make h1 all caps -->
             <h1>Programs & Services</h1>
@@ -49,6 +51,7 @@
         <!-- down arrow icon goes here  -->
         <i class="fa-solid fa-arrow down"></i>
        <div>
+            <!-- x2 sections STACKED VERTICALLY with picture, h3, paragraph and primary button  -->
             <article>
                 <picture>
                 <img src="/images/weightlifting.jpg" alt="person about to lift barbell">
@@ -73,7 +76,8 @@
             <!-- add all caps to h2 -->
             <h2>Memberships</h2>
             <p>Enjoy flexible membership options that give you access to our top-notch facilities, diverse programs, and exclusive perks—designed to fit your lifestyle and fitness goals!</p>
-            
+              
+            <!-- x4 blocks STACKED VERTICALLY with icon, h3, unordered list of features-->
             <div>
                 <h2>Types & Pricing</h2>
                 <section>
@@ -123,37 +127,24 @@
             </div>
        </div>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <!-- footer with links and copyright-->
         
-        <img src="/images/logo.svg" alt="Logo">
-        <div>
-            <a href="/html/home/index.html">Home</a>
-            <a href="#">About Us</a>
-            <a href="/html/programs/index.html"></a>
-        </div>
-        <div>
-            <a href="/html/schedules/index.html"></a>
-            <a href="/html/community/index.html"></a>
-            <a href="#">Community</a>
+        <img src="/images/logo.svg" alt="Logo" class="active-life">
+        <div class="foot-main"> 
+            <div class="foot-menu">
+                <a href="/html/home/index.html" class="special-a">Home</a>
+                <a href="#" class="special-a">About Us</a>
+                <a href="/html/programs/index.html" class="special-a"> Programs & Services</a>
+            </div>
+            <div class="foot-menu">
+                <a href="/html/schedules/index.html" class="special-a">Schedules</a>
+                <a href="/html/community/index.html" class="special-a">Community</a>
+                <a href="#" class="special-a">Contact Us</a>
+            </div>
         </div>
         <p> Copyright &copy;2025 Active Life Centre. </p>
     </footer>
-    <!------------------ MOBILE -------------------->
-    <!-- main nav with logo and slide in menu -->
-
-    <!-- h1 -->
-    <!-- paragraph -->
-    <!-- down arrow -->
-    
-    <!-- x2 sections STACKED VERTICALLY with picture, h3, paragraph and primary button  -->
-    
-    <!-- h1 -->
-    <!-- paragraph -->
-    <!-- h2 -->
-    <!-- x4 blocks STACKED VERTICALLY with icon, h3, unordered list of features-->
-
-    <!-- footer with links and copyright-->
 
 
     <!------------------ TABLET -------------------->
