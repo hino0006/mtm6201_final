@@ -33,6 +33,13 @@ hr{
     padding-bottom: 50px;
 }
 
+.fa-arrow-down{
+    font-size: 30pt;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
 body{
     background-color: var(--primaryColor);
 }
@@ -126,11 +133,6 @@ footer{
     text-decoration: underline;
 }
 
-#tab:visited{
-    color: var(--visited);
-}
-
-
 /* building the blocks/cards/product */
 article{
     background-color: var(--secondaryColor);
@@ -189,9 +191,7 @@ article{
 .connect:active{
     background-color: var(--accentColor);
 }
-.connect:visited{
-    background-color: var(--visited);
-}
+
 
 
 /* primary button in the sections/articles */
@@ -214,10 +214,6 @@ article{
 }
 .connect-2:active{
     background-color: var(--accentColor);
-    
-}
-.connect-2:visited{
-    background-color: var(--visited);
 }
 
 /* calendar */
@@ -278,10 +274,31 @@ table, th, td {
     margin: 10px;
 }
     
+/* programs & services - types and pricing */
+.member{
+    background-color: var(--secondaryColor);
+    padding: 20px;
+    width: 60vw;
+    justify-self: center;
+    margin-bottom: 90px;
+    border-radius: 10px;
+}
+
+.text-2{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.membership{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 /* ------------------MEDIA QUERIES------------------------- */
 /* for tablet */
-@media screen and (min-width: 500px){
+@media screen and (min-width: 800px){
     h1{
         font-size: 52pt;
     }
@@ -294,12 +311,23 @@ table, th, td {
         font-size: 36pt;
     }
  
+    .membership{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem;
+        padding-bottom: 80px;
+    }
+    .membership section{
+        flex: 1;
+        padding: 1rem;
+    }
 } 
 
 
 /* for desktop */
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1200px){
     h1{
         font-size: 72px;
     }
@@ -361,5 +389,26 @@ table, th, td {
         width: 600px;
         padding: 15px;
         margin: 10px;
+    }
+
+    .member{
+        background-color: var(--secondaryColor);
+        padding: 20px;
+        width: 20vw;
+        justify-self: center;
+        margin-bottom: 90px;
+        border-radius: 10px;
+    }
+
+    .membership{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem;
+        padding-bottom: 80px;
+    }
+    .membership section{
+        flex: 1;
+        padding: 1rem;
     }
 } 
